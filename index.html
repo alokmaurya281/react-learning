@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ESSENTIAL Dom</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            transition: 1s;
+        }
+        .whole{
+            margin-left: 50px;
+            margin-top: auto;
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+   <div class="whole">
+
+
+<h1 id="pr">wanda</h1>
+<h1 id="br">hgjhg</h1>
+<!-- event handling -->
+<br><br>
+<button onclick="dosomething()">Click</button>
+<br><br>
+
+<div class="box" id="box">
+    wong
+
+</div>
+<br><br>
+<button onclick="changebox()">Change box</button><br><br>
+
+<img id="image" src="download.jpg">
+<br><br>
+<button  onclick="changeimage()">change imgae</button>
+</div>
+
+    <script>
+
+
+        const num1=20; // you cannot change
+
+        
+
+
+        let num=1;
+        console.log(num);
+        console.log("HII");
+        console.log("HII");
+        console.log("the name is " + num)
+        console.log(`the name is ${num}` )
+
+        document.querySelector("#pr").innerText="good";
+2
+        function dosomething(){
+            document.querySelector("#br").innerText="wow";
+            document.getElementById("pr").innerHTML="momo";
+
+        }
+        
+
+        function changebox(){
+            
+            document.getElementById("box").innerHTML="no  getege";
+            document.getElementById("box").style.backgroundColor="red";
+            document.getElementById("box").style.fontSize = "50px";
+
+
+        }
+        function changeimage(){
+            document.getElementById("image").setAttribute("src", "a.jpg");
+        }
+        
+
+
+    </script>
+</body>
+</html>
